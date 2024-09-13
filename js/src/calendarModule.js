@@ -929,9 +929,8 @@ function fullcalendarConfig() {
 				};
 			}
 		},
-		googleCalendarApiKey: 'AIzaSyB0sB35p1ky0BsetyyRBD0YgJJEBlDdFUk', // do not use this apikey, you can get your own on Google Cloud
+		googleCalendarApiKey: '<gcalapi>', // do not use this apikey, you can get your own on Google Cloud
 		eventSources: [
-			// url: 'https://frenzy-401004-default-rtdb.asia-southeast1.firebasedatabase.app/calendarEvents.json',
 			eventPromise.then(function (value) {
 				calendar.addEventSource({
 					events: value,
@@ -946,22 +945,22 @@ function fullcalendarConfig() {
 			// }, 5000),
 			{
 				// regular
-				googleCalendarId: '098a6b3997280af33e63c06376ae67be8d1d0b2bd7c1636eccb86b84db3fea54@group.calendar.google.com',
+				googleCalendarId: '<gcalgroudid1>',
 				backgroundColor: 'red',
 			},
 			{
 				// member
-				googleCalendarId: '86e36adb6db06d7b381dc68006486ca6110b2421794fb5ab9bb9a2be0995be3c@group.calendar.google.com',
+				googleCalendarId: '<gcalgroupid2>',
 				backgroundColor: 'yellow',
 			},
 			{
 				// announcement
-				googleCalendarId: '71ebf95725a0e15519051791c4ae7900eeb317b43c1f96bafe5ead9f9b31e048@group.calendar.google.com',
+				googleCalendarId: '<gcalgroupid3>',
 				backgroundColor: 'purple',
 			},
 			{
 				// holiday in indonesia
-				googleCalendarId: 'id.indonesian#holiday@group.v.calendar.google.com',
+				googleCalendarId: '<gcalgroupid4>',
 				backgroundColor: 'orange',
 			},
 		],
@@ -1038,7 +1037,7 @@ function redirectWhatsapp() {
 	let date = 'tanggal';
 	let href;
 
-	let phoneNumber = '6285250851118'; // phone number with whatsapp
+	let phoneNumber = '<wa_number>'; // phone number with whatsapp
 
 	setDatabase();
 	if (nameValue == '') {
@@ -1088,7 +1087,7 @@ function redirectWhatsappOnly() {
 	let date = 'tanggal';
 	let href;
 
-	let phoneNumber = '6285250851118'; // phone number for whatsapp
+	let phoneNumber = '<wa_number>'; // phone number for whatsapp
 
 	if (nameValueTwo == '') {
 		href = '#';
